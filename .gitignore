@@ -1,4 +1,2 @@
-!.gitignore
-!package.json
-!dist/*
-/*
+node_modules
+**.log
