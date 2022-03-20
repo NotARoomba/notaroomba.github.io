@@ -19,6 +19,7 @@ export default function App() {
   );
 }
 function NavBar() {
+  reloadUI()
   return (
     <div>
     <div class="top-nav">
