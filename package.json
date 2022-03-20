@@ -1,7 +1,7 @@
 {
   "name": "ReplitReactjsProject",
-  "version": "0.0.1",
-  "homepage": "https://notaroomba.github.io",
+  "version": "1.0.0",
+  "homepage": "https://notaroomba.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
