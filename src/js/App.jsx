@@ -22,10 +22,10 @@ function NavBar() {
   return (
     <div>
     <div class="top-nav">
-            <Link to="/" id="nav-start" onClick={() => reloadUI()}>Home</Link>
-            <Link to="/about" onClick={() => reloadUI()}>About Me</Link>
-            <Link to="/projects" onClick={reloadUI}>Projects</Link>
-            <Link id="nav-end" to="/noclick" onClick={reloadUI}>Don't Click</Link>
+            <Link to="/" id="nav-start" onClick={() => reloadUI(1)}>Home</Link>
+            <Link to="/about" onClick={() => reloadUI(2)}>About Me</Link>
+            <Link to="/projects" onClick={() => reloadUI(3)}>Projects</Link>
+            <Link id="nav-end" to="/noclick" onClick={() => reloadUI(4)}>Don't Click</Link>
 </div>
       <Outlet/>
     </div>);
@@ -62,6 +62,16 @@ function NoClick() {
   </div>)
 }
 function reloadUI(a) {
-    const titles = ["Your Mother", "[Insert Name Here]", "Not Minecraft", "Runs on a potato", "aeoiu"]
+    const titles = ["your mother", "[Insert Name Here]", "Not Minecraft", "runs on a potato", "aeoiu", "apple pineapple", "eugena", "teacup"]
   document.title = titles[Math.floor(Math.random() * titles.length)];
+   setTimeout(() => {
+     if (document.readyState === "complete") {
+  switch (a) {
+    case 1:
+      const homeTitles = ["Home", "Welcome", "NotAWebsite", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"]
+    document.getElementById("home-title").innerHTML = homeTitles[Math.floor(Math.random() * homeTitles.length)];;
+    break;
+  }
+     }
+        })
 }
