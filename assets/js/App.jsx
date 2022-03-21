@@ -48,7 +48,7 @@ function About() {
            <div class="top-text">
             <p>About Me</p>
            </div>
-    <img src="/src/img/profile.png" id="profile"/>
+    <img src="/assets/img/profile.png" id="profile"/>
     <div class="info-text">
       <p>Hello, I am a high school student that likes to break things for fun. My main languages are Javascript, C++, and Java but I'm trying to learn more! Check out this website to maybe find an easter egg...</p>
     </div>
