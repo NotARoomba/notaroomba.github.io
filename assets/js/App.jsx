@@ -38,15 +38,20 @@ function Home() {
          <p id="home-title">Home</p>
   </div>
       <div class="info-text">
+          <p>01101001 01100110 00100000 01110101 01110010 00100000 01110010 01100101 01100001 01100100 01101001 01101110 01100111 00100000 01110100 01101000 01101001 01110011 00100000 01110100 01101000 01100101 01101110 00100000 01110101 01110010 00100000 01100001 00100000 01101110 01100101 01110010 01100100<br/> -Unknown</p>
+      </div>
+      {/*
+      <div class="info-text">
           <p>This page was made in memorial to the dozens of poor souls murdered by Nathan's confusing and mind boggling code. He frequently create codes that makes literally no sense and give to his teacher and fry his brain. The wonderful projects are posted here for you to die. <br/> -Henry</p>
       </div>
+      */}
     </div>)
 }
 
 function About() {
   return (<div>
            <div class="top-text">
-            <p>About Me</p>
+            <p id="about-title">About Me</p>
            </div>
     <img src="/assets/img/profile.png" id="profile-pic"/>
     <div class="info-text">
@@ -58,7 +63,7 @@ function About() {
 function Projects() {
   return (<div>
     <div class="top-text">
-    <p>My Projects</p>
+    <p id="project-title">this is so bad why am i even writing this for a website that no-one will probably ever visit...</p>
   </div>
     <div>
       <div class="left-show">
@@ -88,8 +93,13 @@ Filled with nothing but learning attempts even I'm surprised it could build. Che
 function NoClick() {
   return ( <div>
          <div class="top-text">
-           <p>Don't scroll...</p>
+           <p id="noclick-title">Don't Look...</p>
 </div>
+     <div class="left-show">
+        <img src="/assets/img/cmd.png" class="left-show-pic"/>
+          <p class="left-show-title">Hello World</p>
+        <p class="left-show-desc">Hello World is a very simple program that every coder should make when learning a new language. Here is an example of a byproduct of boredom and too much time. This program uses 12 (13 including bash) languages to print Hello World. You can see this horror <a href="https://github.com/NotARoomba/HelloWorld">here</a> along with the link to the <a href="https://replit.com/@NotARoomba/HelloWorld">repl</a>.</p>
+    </div>
   </div>)
 }
 function reloadUI(a) {
@@ -100,7 +110,19 @@ function reloadUI(a) {
   switch (a) {
     case 1:
       const homeTitles = ["Home", "Welcome", "NotAWebsite", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"]
-    document.getElementById("home-title").innerHTML = homeTitles[Math.floor(Math.random() * homeTitles.length)];;
+    document.getElementById("home-title").innerHTML = homeTitles[Math.floor(Math.random() * homeTitles.length)];
+    break;
+    case 2:
+      const profileTitles = ["imagine", "idk", "why bother", "credits", "About Me"]
+    document.getElementById("about-title").innerHTML = profileTitles[Math.floor(Math.random() * profileTitles.length)];
+    break;
+      case 3:
+      const projectTitles = ["my stuff", "runs on several potatos", "cool programs", "NotAVirus", "My Projects"]
+    document.getElementById("project-title").innerHTML = projectTitles[Math.floor(Math.random() * projectTitles.length)];
+    break;
+      case 4:
+      const noclickTitles = ["totally works", "runs on several (million) potatos", "borken", "(Totally)NotAVirus", "my computer cried", "Don't Look..."]
+    document.getElementById("noclick-title").innerHTML = noclickTitles[Math.floor(Math.random() * noclickTitles.length)];
     break;
   }
      }
