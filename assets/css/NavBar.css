@@ -1,11 +1,12 @@
 .top-nav {
   background-color: #292929;
-  overflow: hidden;
+  overflow: visible;
   text-align: center;
-  width: 35%;
-  min-width: 478px;
+  max-height: 57px;
+  width: 463px;
+  box-sizing:border-box;
   margin: 0 auto 0 auto;
-  border-radius: 20px;
+  border-radius: 22px;
   background-clip: padding-box;
 }
 
@@ -15,18 +16,21 @@
   padding: 20px 20px;
   display: inline-block;
   text-decoration: none;
+  max-height: inherit;
   vertical-align: center;
   font-size: 17px;
 }
 #nav-start {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-   padding-left: 9.91%;
+  padding-left: 40px;
+  display: inline-flex;
 }
 #nav-end {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  padding-right: 9.91%;
+  padding-right: 40px;
+  display: inline-flex;
 }
 
 .top-nav a:hover {
