@@ -60,6 +60,7 @@ a {
     width: 1px; 
     margin: auto;
     display: flex;
+   align-items:center;
     overflow: visible;
     background: #a8a8a8; 
 }
@@ -75,9 +76,9 @@ a {
 .left-show-title {
   color: #d4d4d4;
   font-size: 35px;
-  position: relative;
+  position: relative; 
+  min-width: 130px;
   right: 410px;
-  top: 65px;
   text-shadow:
     0 0 7px #a8a8a8,
     0 0 10px #a8a8a8,
@@ -95,13 +96,13 @@ a {
   min-width: 500px;
   position: relative;
   right: 360px;
-  top: 25px;
 }
 
 .right-show{
     width: 1px; 
     margin: auto;
     display: flex;
+   align-items:center;
     overflow: visible;
     background: #a8a8a8; 
 }
@@ -116,9 +117,9 @@ a {
 .right-show-title {
   color: #d4d4d4;
   font-size: 35px;
-  position: relative;
+  position: relative; 
+  min-width: 110px;
   right: 190px;
-  top: 30px;
   text-shadow:
     0 0 7px #a8a8a8,
     0 0 10px #a8a8a8,
@@ -136,5 +137,4 @@ a {
   min-width: 500px;
   position: relative;
   left: -920px;
-  top: 65px;
 }

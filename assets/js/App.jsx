@@ -62,7 +62,7 @@ function Projects() {
   </div>
     <div>
       <div class="left-show">
-        <img src="/assets/img/tubb.png" id="a" class="left-show-pic"/>
+        <img src="/assets/img/tubb.png" class="left-show-pic"/>
           <p class="left-show-title">TubbBot</p>
         <p class="left-show-desc">Tubb is a utility bot with a multitude of useful commands as well as a music system for your enjoyment. Commands are straight forward unlike the complications you have to deal with in other bots. Tubb is still being constantly worked on, so please send any bugs to the GitHub repository <a href="https://github.com/NotARoomba/TubbBot">here</a>. Feature suggestions are welcome. You can also invite Tubb <a href="https://top.gg/bot/750123677739122819">here</a>.</p>
     </div>
@@ -70,6 +70,12 @@ function Projects() {
         <img src="/assets/img/cmd.png" class="right-show-pic"/>
           <p class="right-show-title">Simple Music Player</p>
         <p class="right-show-desc">Just a music player mini-project to get more familliar with C#. Complile it or look at the <a href="https://github.com/NotARoomba/Simple-Music-Player/releases">releases</a> to run.</p>
+    </div>
+      <div class="left-show">
+        <img src="/assets/img/music.png" class="left-show-pic"/>
+          <p class="left-show-title">Simple Music Player 2</p>
+        <p class="left-show-desc">Its back, the application no-one asked for... Simple Music Player 2!
+Filled with nothing but learning attempts even I'm surprised it could build. Check out the <a href="https://github.com/NotARoomba/Simple-Music-Player-2/releases">releases</a> for this unit of an attempt.</p>
     </div>
     </div>
   </div>)
