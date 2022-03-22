@@ -139,3 +139,17 @@ a {
   position: relative;
   left: -920px;
 }
+#secret-btn {
+  color: #383838;
+  background-color: #383838;
+  border: none;
+  height: 15px;
+  width: 50px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
+#secret-text {
+  display: none;
+}

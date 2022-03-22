@@ -40,11 +40,13 @@ function Home() {
       <div class="info-text">
           <p>01101001 01100110 00100000 01110101 01110010 00100000 01110010 01100101 01100001 01100100 01101001 01101110 01100111 00100000 01110100 01101000 01101001 01110011 00100000 01110100 01101000 01100101 01101110 00100000 01110101 01110010 00100000 01100001 00100000 01101110 01100101 01110010 01100100<br/> -Unknown</p>
       </div>
-      {/*
-      <div class="info-text">
+      <div class="info-text" id="secret-text">
           <p>This page was made in memorial to the dozens of poor souls murdered by Nathan's confusing and mind boggling code. He frequently create codes that makes literally no sense and give to his teacher and fry his brain. The wonderful projects are posted here for you to die. <br/> -Henry</p>
       </div>
-      */}
+      <div>
+        <button type="button" id="secret-btn" onClick={() => 
+  secret()}>...</button>
+      </div>
     </div>)
 }
 
@@ -63,7 +65,7 @@ function About() {
 function Projects() {
   return (<div>
     <div class="top-text">
-    <p id="project-title">this is so bad why am i even writing this for a website that no-one will probably ever visit...</p>
+    <p id="project-title">this is so bad why am i even writing this for a sentence that no-one will probably ever have the time to fully view and understand whats going on inside the website in the bottom right corner of the page there is totally not some nifty button that does something and btw the button is ... totally not on the home page...</p>
   </div>
     <div>
       <div class="left-show">
@@ -127,4 +129,7 @@ function reloadUI(a) {
   }
      }
         })
+}
+function secret() {
+    document.getElementById("secret-text").style.display="block";
 }
