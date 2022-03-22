@@ -77,6 +77,11 @@ function Projects() {
         <p class="left-show-desc">Its back, the application no-one asked for... Simple Music Player 2!
 Filled with nothing but learning attempts even I'm surprised it could build. Check out the <a href="https://github.com/NotARoomba/Simple-Music-Player-2/releases">releases</a> for this unit of an attempt.</p>
     </div>
+      <div class="right-show">
+        <img src="/assets/img/bounce.png" class="right-show-pic"/>
+          <p class="right-show-title">Bounce</p>
+        <p class="right-show-desc"> A 2 player pong game made with C++ and SDL2. Player 1 conrols are Up and Left arrow Player 2 Controls are Right and Down arrow. Complile it or look at the <a href="https://github.com/NotARoomba/Bounce/releases">releases</a> to run.</p>
+    </div>
     </div>
   </div>)
 }
