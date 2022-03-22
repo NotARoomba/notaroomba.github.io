@@ -3,6 +3,7 @@
   overflow: hidden;
   text-align: center;
   width: 35%;
+  min-width: 478px;
   margin: 0 auto 0 auto;
   border-radius: 20px;
   background-clip: padding-box;

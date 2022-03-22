@@ -48,7 +48,7 @@ function About() {
            <div class="top-text">
             <p>About Me</p>
            </div>
-    <img src="/assets/img/profile.png" id="profile"/>
+    <img src="/assets/img/profile.png" id="profile-pic"/>
     <div class="info-text">
       <p>Hello, I am a high school student that likes to break things for fun. My main languages are Javascript, C++, and Java but I'm trying to learn more! Check out this website to maybe find an easter egg...</p>
     </div>
@@ -62,7 +62,9 @@ function Projects() {
   </div>
     <div>
       <div class="left-show">
-        
+        <img src="/assets/img/tubb.png" class="left-show-pic"/>
+          <p class="left-show-title">TubbBot</p>
+        <p class="left-show-desc">Tubb is a utility bot with a multitude of useful commands as well as a music system for your enjoyment. Commands are straight forward unlike the complications you have to deal with in other bots. Tubb is still being constantly worked on, so please send any bugs to the GitHub repository <a href="https://github.com/NotARoomba/TubbBot">here</a>. Feature suggestions are welcome. You can also invite Tubb <a href="https://top.gg/bot/750123677739122819">here</a>.</p>
     </div>
       <div class="right-show">
         

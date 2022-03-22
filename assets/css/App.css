@@ -17,6 +17,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+a {
+  color: inherit;
+}
 .top-text {
   color: #d4d4d4;
   font-size: 50px;
@@ -39,10 +42,10 @@ code {
   margin-right: auto;
   padding: 30px;
 }
-#profile {
+#profile-pic {
   width: 15%;
   height: 15%;
-   display: block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   border-radius:60%;
@@ -52,4 +55,45 @@ code {
     0 0 21px #000000,
     0 0 42px #000000,
     0 0 82px #000000;
+}
+.left-show{
+    width: 1px; 
+    margin: auto;
+    display: flex;
+    overflow: visible;
+    background: #a8a8a8; 
+}
+.left-show-pic {
+  width: 200px;
+  height: 200px;
+  display: block;
+  padding: 20px;
+  position: relative;
+  right: 420px;
+  border-radius:30%;
+}
+.left-show-title {
+  color: #d4d4d4;
+  font-size: 35px;
+  position: relative;
+  right: 410px;
+  top: 65px;
+  text-shadow:
+    0 0 7px #a8a8a8,
+    0 0 10px #a8a8a8,
+    0 0 21px #a8a8a8,
+    0 0 42px #383838,
+    0 0 82px #383838,
+    0 0 92px #383838,
+    0 0 102px #383838,
+    0 0 151px #383838;
+}
+.left-show-desc {
+  color: #7A7A7A;
+  padding: 30px;
+  display: block;
+  min-width: 500px;
+  position: relative;
+  right: 360px;
+  top: 25px;
 }
