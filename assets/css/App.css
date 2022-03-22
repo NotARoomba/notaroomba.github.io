@@ -97,3 +97,44 @@ a {
   right: 360px;
   top: 25px;
 }
+
+.right-show{
+    width: 1px; 
+    margin: auto;
+    display: flex;
+    overflow: visible;
+    background: #a8a8a8; 
+}
+.right-show-pic {
+  width: 240px;
+  height: 240px;
+  display: block;
+  position: relative;
+  left: 175px;
+  border-radius:30%;
+}
+.right-show-title {
+  color: #d4d4d4;
+  font-size: 35px;
+  position: relative;
+  right: 190px;
+  top: 30px;
+  text-shadow:
+    0 0 7px #a8a8a8,
+    0 0 10px #a8a8a8,
+    0 0 21px #a8a8a8,
+    0 0 42px #383838,
+    0 0 82px #383838,
+    0 0 92px #383838,
+    0 0 102px #383838,
+    0 0 151px #383838;
+}
+.right-show-desc {
+  color: #7A7A7A;
+  padding: 30px;
+  display: block;
+  min-width: 500px;
+  position: relative;
+  left: -920px;
+  top: 65px;
+}

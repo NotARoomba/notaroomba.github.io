@@ -1,0 +1,1 @@
+cp -f ./assets/img/* ./public/assets/img && npm run build
