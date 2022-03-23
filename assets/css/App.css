@@ -153,3 +153,21 @@ a {
 #secret-text {
   display: none;
 }
+.info-links {
+  display: block;
+  margin:auto;
+  width: 50%;
+  padding: 10px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+.info-links a {
+  display: inline-block;
+  padding: 0px;
+  padding-top: 20px;
+}
+.info-links img {
+  margin:auto;
+  padding-left: 2px;
+  padding-right: 2px;
+}
