@@ -71,23 +71,23 @@ function Projects() {
       <div class="left-show">
         <img src="/assets/img/tubb.png" class="left-show-pic"/>
           <p class="left-show-title">TubbBot</p>
-        <p class="left-show-desc">Tubb is a utility bot with a multitude of useful commands as well as a music system for your enjoyment. Commands are straight forward unlike the complications you have to deal with in other bots. Tubb is still being constantly worked on, so please send any bugs to the GitHub repository <a href="https://github.com/NotARoomba/TubbBot">here</a>. Feature suggestions are welcome. You can also invite Tubb <a href="https://top.gg/bot/750123677739122819">here</a>.</p>
+        <p class="left-show-desc">Tubb is a utility bot with a multitude of useful commands as well as a music system for your enjoyment. Commands are straight forward unlike the complications you have to deal with in other bots. Tubb is still being constantly worked on, so please send any bugs to the GitHub repository <a href="https://github.com/NotARoomba/TubbBot" target="_blank">here</a>. Feature suggestions are welcome. You can also invite Tubb <a href="https://top.gg/bot/750123677739122819" target="_blank">here</a>.</p>
     </div>
       <div class="right-show">
         <img src="/assets/img/cmd.png" class="right-show-pic"/>
           <p class="right-show-title">Simple Music Player</p>
-        <p class="right-show-desc">Just a music player mini-project to get more familliar with C#. Complile it or look at the <a href="https://github.com/NotARoomba/Simple-Music-Player/releases">releases</a> to run.</p>
+        <p class="right-show-desc">Just a music player mini-project to get more familliar with C#. Complile it or look at the <a href="https://github.com/NotARoomba/Simple-Music-Player/releases" target="_blank">releases</a> to run.</p>
     </div>
       <div class="left-show">
         <img src="/assets/img/music.png" class="left-show-pic"/>
           <p class="left-show-title">Simple Music Player 2</p>
         <p class="left-show-desc">Its back, the application no-one asked for... Simple Music Player 2!
-Filled with nothing but learning attempts even I'm surprised it could build. Check out the <a href="https://github.com/NotARoomba/Simple-Music-Player-2/releases">releases</a> for this unit of an attempt.</p>
+Filled with nothing but learning attempts even I'm surprised it could build. Check out the <a href="https://github.com/NotARoomba/Simple-Music-Player-2/releases" target="_blank">releases</a> for this unit of an attempt.</p>
     </div>
       <div class="right-show">
         <img src="/assets/img/bounce.png" class="right-show-pic"/>
           <p class="right-show-title">Bounce</p>
-        <p class="right-show-desc"> A 2 player pong game made with C++ and SDL2. Player 1 conrols are Up and Left arrow Player 2 Controls are Right and Down arrow. Complile it or look at the <a href="https://github.com/NotARoomba/Bounce/releases">releases</a> to run.</p>
+        <p class="right-show-desc"> A 2 player pong game made with C++ and SDL2. Player 1 conrols are Up and Left arrow Player 2 Controls are Right and Down arrow. Complile it or look at the <a href="https://github.com/NotARoomba/Bounce/releases" target="_blank">releases</a> to run.</p>
     </div>
     </div>
   </div>)
@@ -100,7 +100,7 @@ function NoClick() {
      <div class="left-show">
         <img src="/assets/img/cmd.png" class="left-show-pic"/>
           <p class="left-show-title">Hello World</p>
-        <p class="left-show-desc">Hello World is a very simple program that every coder should make when learning a new language. Here is an example of a byproduct of boredom and too much time. This program uses 12 (13 including bash) languages to print Hello World. You can see this horror <a href="https://github.com/NotARoomba/HelloWorld">here</a> along with the link to the <a href="https://replit.com/@NotARoomba/HelloWorld">repl</a>.</p>
+        <p class="left-show-desc">Hello World is a very simple program that every coder should make when learning a new language. Here is an example of a byproduct of boredom and too much time. This program uses 12 (13 including bash) languages to print Hello World. You can see this horror <a href="https://github.com/NotARoomba/HelloWorld" target="_blank">here</a> along with the link to the <a href="https://replit.com/@NotARoomba/HelloWorld" target="_blank">repl</a>.</p>
     </div>
   </div>)
 }
