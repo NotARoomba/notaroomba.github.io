@@ -101,7 +101,17 @@ Filled with nothing but learning attempts even I'm surprised it could build. Che
       <div class="right-show">
         <img src="/assets/img/bounce.png" class="right-show-pic"/>
           <p class="right-show-title">Bounce</p>
-        <p class="right-show-desc"> A 2 player pong game made with C++ and SDL2. Player 1 conrols are Up and Left arrow Player 2 Controls are Right and Down arrow. Complile it or look at the <a href="https://github.com/NotARoomba/Bounce/releases" target="_blank">releases</a> to run.</p>
+        <p class="right-show-desc">A 2 player pong game made with C++ and SDL2. Player 1 conrols are Up and Left arrow Player 2 Controls are Right and Down arrow. Complile it or look at the <a href="https://github.com/NotARoomba/Bounce/releases" target="_blank">releases</a> to run.</p>
+    </div>
+    <div class="left-show">
+        <img src="/assets/img/asteroids.png" class="left-show-pic"/>
+          <p class="left-show-title">Asteroids</p>
+        <p class="left-show-desc">Another asteroids clone out of millions by aspiring developers to join their favorite game company by learning SDL, OpenGL, or any myriad of graphics libraries. Check out the <a href="https://github.com/NotARoomba/Asteroids/releases" target="_blank">releases</a> to dodge asteroids with (somewhat) broken colision.</p>
+    </div>
+      <div class="right-show">
+        <img src="/assets/img/wordle.png" class="right-show-pic"/>
+          <p class="right-show-title">Wordle Cli</p>
+        <p class="right-show-desc">A special product of desperation, boredom, and the desire to fit in comes this Cli version of the (decently) popular Wordle game. Complile it or look at the <a href="https://github.com/NotARoomba/WordleCli/releases" target="_blank">releases</a> to run.</p>
     </div>
     </div>
   </div>)
