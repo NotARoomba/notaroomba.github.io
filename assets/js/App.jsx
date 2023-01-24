@@ -112,7 +112,17 @@ Filled with nothing but learning attempts even I'm surprised it could build. Che
         <img src="/assets/img/wordle.png" class="right-show-pic"/>
           <p class="right-show-title">Wordle Cli</p>
         <p class="right-show-desc">A special product of desperation, boredom, and the desire to fit in comes this Cli version of the (decently) popular Wordle game. Complile it or look at the <a href="https://github.com/NotARoomba/WordleCli/releases" target="_blank">releases</a> to run.</p>
+      </div>
+      <div class="left-show">
+        <img src="/assets/img/koombia.png" class="left-show-pic"/>
+          <p class="left-show-title">Koombia</p>
+        <p class="left-show-desc">Koombia lets you turn text from your science, spanish, history or ethics lessons into songs for you to memorize the contents of your quiz faster and easier. Using Koombia is as easy as copy, pasting, and clicking. Paste your lesson into the text area and select a genre for your song. It will generate a random beat with chord progressions based on the genre and a text to speech will sing the song. Next to it, theres a karaoke where you can test your singing skills and see if you learned correctly the song. You can try it out <a href="https://koombia.notaroomba.xyz" target="_blank">on my website</a> and look at the <a href="https://github.com/NotARoomba/Koombia" target="_blank">GitHub</a>.</p>
     </div>
+      <div class="right-show">
+        <img src="/assets/img/grindhub.png" class="right-show-pic"/>
+          <p class="right-show-title">Grind Hub</p>
+        <p class="right-show-desc">GrindHub will help you turn your procrastination into your habits! We built an intuitive platform where you can challenge yourself and do different daily missions and receive rewards, that will help you increase your level! Using GrindHub will be fun and rewarding at the end of the year. You can try out this Ai mess <a href="https://grindhub.notaroomba.xyz" target="_blank">here</a> or look at the spaghetti code <a href="https://github.com/NotARoomba/GrindHub" target="_blank">here</a>.</p>
+      </div>
     </div>
   </div>)
 }
