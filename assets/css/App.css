@@ -171,3 +171,70 @@ a {
   padding-left: 2px;
   padding-right: 2px;
 }
+.bottom-nav {
+  text-align: center;
+  bottom: 0;
+}
+.bottom-nav p {
+  color: #d4d4d4;
+  font-size: 25px;
+  text-align: center;
+  overflow: visible;
+  text-shadow:
+    0 0 7px #a8a8a8,
+    0 0 10px #a8a8a8,
+    0 0 21px #a8a8a8,
+    0 0 42px #383838,
+    0 0 82px #383838,
+    0 0 92px #383838,
+    0 0 102px #383838,
+    0 0 151px #383838;
+}
+.bottom-nav a {
+  color: #7A7A7A;
+  text-align: center;
+  padding: 20px 20px;
+  display: inline-block;
+  text-decoration: none;
+  max-height: inherit;
+  vertical-align: center;
+  font-size: 17px;
+}
+
+.bottom-nav a:hover {
+  background-color: #333333;
+  color: #9A9A9A;
+  overflow: visible;
+  text-shadow:
+    0 0 7px #d8d8d8,
+    0 0 10px #d8d8d8,
+    0 0 21px #d8d8d8;
+    -webkit-animation: pulsate 1s ease-out;
+    -moz-animation: pulsate 1s ease-out;
+    -ms-animation: pulsate 1s ease-out;
+    -o-animation: pulsate 1s ease-out;
+    animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulsate {
+  0% {
+    text-shadow: 0 0 7px #FFFFFF,
+    0 0 10px #FFFFFF,
+    0 0 21px #FFFFFF;
+  }
+  50% {
+    text-shadow: 0 0 14px #FFFFFF,
+    0 0 20px #FFFFFF,
+    0 0 42px #FFFFFF;
+  }
+  100% {
+    text-shadow: 0 0 7px #FFFFFF,
+    0 0 10px #FFFFFF,
+    0 0 21px #FFFFFF;
+  }
+}

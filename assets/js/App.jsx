@@ -29,7 +29,8 @@ function NavBar() {
             <Link id="nav-end" to="/noclick" onClick={() => reloadUI(4)}>Don't Click</Link>
 </div>
       <Outlet/>
-    </div>);
+    </div>
+  );
 }
 function Home() {
   return (
@@ -44,8 +45,13 @@ function Home() {
           <p>This page was made in memorial to the dozens of poor souls murdered by Nathan's confusing and mind boggling code. He frequently create codes that makes literally no sense and give to his teacher and fry his brain. The wonderful projects are posted here for you to die. <br/> -Henry</p>
       </div>
       <div>
+      <div class="bottom-nav">
+            <p>Special Projects</p>
+            <Link to="/" onClick={() => window.location.href = "https://grindhub.notaroomba.xyz"}>GrindHub</Link>
+            <Link to="/" onClick={() => window.location.href = "https://koombia.notaroomba.xyz"}>Koombia</Link>
         <button type="button" id="secret-btn" onClick={() => 
   secret()}>...</button>
+  </div>
       </div>
     </div>)
 }
