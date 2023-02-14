@@ -37,3 +37,13 @@
   background-color: #333333;
   color: #8A8A8A;
 }
+
+@media only screen and (max-width: 1130px){
+  .top-nav a{
+    font-size: 25px;
+    padding:10px;
+  }
+  .top-nav{
+    width: 100%;
+  }
+}

@@ -26,7 +26,7 @@ function NavBar() {
             <Link to="/" id="nav-start" onClick={() => reloadUI(1)}>Home</Link>
             <Link to="/about" onClick={() => reloadUI(2)}>About Me</Link>
             <Link to="/projects" onClick={() => reloadUI(3)}>Projects</Link>
-            <Link id="nav-end" to="/noclick" onClick={() => reloadUI(4)}>Don't Click</Link>
+            <Link id="" to="/noclick" onClick={() => reloadUI(4)}>Don't Click</Link>
 </div>
       <Outlet/>
     </div>
@@ -38,11 +38,11 @@ function Home() {
       <div class="top-text">
          <p id="home-title">Home</p>
   </div>
-      <div class="info-text">
-          <p>01101001 01100110 00100000 01110101 01110010 00100000 01110010 01100101 01100001 01100100 01101001 01101110 01100111 00100000 01110100 01101000 01101001 01110011 00100000 01110100 01101000 01100101 01101110 00100000 01110101 01110010 00100000 01100001 00100000 01101110 01100101 01110010 01100100<br/> -Unknown</p>
+      <div class="info-text" id='wrap'>
+          <p class="wrap">01101001 01100110 00100000 01110101 01110010 00100000 01110010 01100101 01100001 01100100 01101001 01101110 01100111 00100000 01110100 01101000 01101001 01110011 00100000 01110100 01101000 01100101 01101110 00100000 01110101 01110010 00100000 01100001 00100000 01101110 01100101 01110010 01100100<br/> -Unknown</p>
       </div>
       <div class="info-text" id="secret-text">
-          <p>This page was made in memorial to the dozens of poor souls murdered by Nathan's confusing and mind boggling code. He frequently create codes that makes literally no sense and give to his teacher and fry his brain. The wonderful projects are posted here for you to die. <br/> -Henry</p>
+          <p class="wrap">This page was made in memorial to the dozens of poor souls murdered by Nathan's confusing and mind boggling code. He frequently create codes that makes literally no sense and give to his teacher and fry his brain. The wonderful projects are posted here for you to die. <br/> -Henry</p>
       </div>
       <div>
       <div class="bottom-nav">
@@ -83,11 +83,11 @@ function About() {
 }
 
 function Projects() {
-  return (<div>
+  return (<div class="project-container">
     <div class="top-text">
     <p id="project-title">this is so bad why am i even writing this for a sentence that no-one will probably ever have the time to fully view and understand whats going on inside the website in the bottom right corner of the page there is totally not some nifty button that does something and btw the button is ... totally not on the home page...</p>
   </div>
-    <div>
+    <div class="line">
       <div class="left-show">
         <img src="/assets/img/tubb.png" class="left-show-pic"/>
           <p class="left-show-title">TubbBot</p>
@@ -96,7 +96,7 @@ function Projects() {
       <div class="right-show">
         <img src="/assets/img/cmd.png" class="right-show-pic"/>
           <p class="right-show-title">Simple Music Player</p>
-        <p class="right-show-desc">Just a music player mini-project to get more familliar with C#. Complile it or look at the <a href="https://github.com/NotARoomba/Simple-Music-Player/releases" target="_blank">releases</a> to run.</p>
+        <p class="right-show-desc">Just a music player mini-project to get more familliar with C#. Complile it or look at the <a href="https://github.com/NotARoomba/Simple-Music-Player/releases" target="_blank"> releases </a> to run.</p>
     </div>
       <div class="left-show">
         <img src="/assets/img/music.png" class="left-show-pic"/>
@@ -133,14 +133,13 @@ Filled with nothing but learning attempts even I'm surprised it could build. Che
   </div>)
 }
 function NoClick() {
-  return ( <div>
+  return ( <div class="last-page">
          <div class="top-text">
-           <p id="noclick-title">Don't Look...</p>
-</div>
-     <div class="left-show">
-        <img src="/assets/img/cmd.png" class="left-show-pic"/>
-          <p class="left-show-title">Hello World</p>
-        <p class="left-show-desc">Hello World is a very simple program that every coder should make when learning a new language. Here is an example of a byproduct of boredom and too much time. This program uses 12 (13 including bash) languages to print Hello World. You can see this horror <a href="https://github.com/NotARoomba/HelloWorld" target="_blank">here</a> along with the link to the <a href="https://replit.com/@NotARoomba/HelloWorld" target="_blank">repl</a>.</p>
+           <p id="noclick-title">Don't Look...</p></div>
+     <div class="last-div-div">
+        <img src="/assets/img/cmd.png" class=""/>
+          <p class="toptext2">Hello World</p>
+          <p class="ptext2">Hello World is a very simple program that every coder should make when learning a new language. Here is an example of a byproduct of boredom and too much time. This program uses 12 (13 including bash) languages to print Hello World. You can see this horror <a href="https://github.com/NotARoomba/HelloWorld" target="_blank">here</a> along with the link to the <a href="https://replit.com/@NotARoomba/HelloWorld" target="_blank">repl</a>.</p>
     </div>
   </div>)
 }
@@ -171,5 +170,5 @@ function reloadUI(a) {
         })
 }
 function secret() {
-    document.getElementById("secret-text").style.display="block";
+    document.getElementById("secret-text").style.display="flex";
 }
