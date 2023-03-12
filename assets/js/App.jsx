@@ -49,6 +49,7 @@ function Home() {
             <p>Special Projects</p>
             <Link to="/" onClick={() => window.location.href = "https://grindhub.notaroomba.xyz"}>GrindHub</Link>
             <Link to="/" onClick={() => window.location.href = "https://koombia.notaroomba.xyz"}>Koombia</Link>
+            <Link to="/" onClick={() => window.location.href = "https://devoided.notaroomba.xyz"}>Devoided</Link>
         <button type="button" id="secret-btn" onClick={() => 
   secret()}>...</button>
   </div>
@@ -129,6 +130,11 @@ Filled with nothing but learning attempts even I'm surprised it could build. Che
           <p class="right-show-title">Grind Hub</p>
         <p class="right-show-desc">GrindHub will help you turn your procrastination into your habits! We built an intuitive platform where you can challenge yourself and do different daily missions and receive rewards, that will help you increase your level! Using GrindHub will be fun and rewarding at the end of the year. You can try out this Ai mess <a href="https://grindhub.notaroomba.xyz" target="_blank">here</a> or look at the spaghetti code <a href="https://github.com/NotARoomba/GrindHub" target="_blank">here</a>.</p>
       </div>
+      <div class="left-show">
+        <img src="/assets/img/devoided.png" class="left-show-pic"/>
+          <p class="left-show-title">Devoided</p>
+        <p class="left-show-desc">Devoided is an RPG game that was developed in a hackathon and got 2nd place. The game is about a quantum engineer explores space-time in search of traces of a deck of ancient Earth, but in his search he becomes trapped in the past and future so he does everything possible to repair his time clock to return to the present and reunite. the letters to discover the mystery of the origin of the universe. You can try it out <a href="https://devoided.notaroomba.xyz" target="_blank">on my website</a> and look at the <a href="https://github.com/NotARoomba/Devoided" target="_blank">GitHub</a>.</p>
+    </div>
     </div>
   </div>)
 }
