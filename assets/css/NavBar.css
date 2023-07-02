@@ -1,9 +1,9 @@
 .top-nav {
   background-color: #292929;
-  overflow: visible;
+  overflow: hidden;
   text-align: center;
-  max-height: 57px;
-  width: 463px;
+  max-height: 5%;
+  width:fit-content;
   box-sizing:border-box;
   margin: 0 auto 0 auto;
   border-radius: 22px;
