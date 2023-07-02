@@ -216,11 +216,11 @@ a {
     0 0 7px #d8d8d8,
     0 0 10px #d8d8d8,
     0 0 21px #d8d8d8;
-    -webkit-animation: pulsate 1s ease-out;
-    -moz-animation: pulsate 1s ease-out;
-    -ms-animation: pulsate 1s ease-out;
-    -o-animation: pulsate 1s ease-out;
-    animation: pulsate 1s ease-out;
+    -webkit-animation: pulsate 2s ease-out;
+    -moz-animation: pulsate 2s ease-out;
+    -ms-animation: pulsate 2s ease-out;
+    -o-animation: pulsate 2s ease-out;
+    animation: pulsate 2s ease-out;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
     -ms-animation-iteration-count: infinite;
@@ -400,7 +400,7 @@ a {
 }
 
 .last-div-div img{
-  width: 400px;
+  width: 200px;
   align-self: center;
 }
 
@@ -414,7 +414,7 @@ a {
 
 .toptext2{
   color: #d4d4d4;
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
   overflow: hidden;
   text-shadow:
@@ -429,7 +429,7 @@ a {
 }
 
 .ptext2{
-  font-size: 30px;
+  font-size: 15px;
   padding: 20px;
   color: #d4d4d4;
 }
