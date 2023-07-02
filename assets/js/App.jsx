@@ -135,6 +135,11 @@ Filled with nothing but learning attempts even I'm surprised it could build. Che
           <p class="left-show-title">Devoided</p>
         <p class="left-show-desc">Devoided is an RPG game that was developed in a hackathon and got 2nd place. The game is about a quantum engineer explores space-time in search of traces of a deck of ancient Earth, but in his search he becomes trapped in the past and future so he does everything possible to repair his time clock to return to the present and reunite. the letters to discover the mystery of the origin of the universe. You can try it out <a href="https://devoided.notaroomba.xyz" target="_blank">on my website</a> and look at the <a href="https://github.com/NotARoomba/Devoided" target="_blank">GitHub</a>.</p>
     </div>
+    <div class="right-show">
+        <img src="/assets/img/chess.png" class="right-show-pic"/>
+          <p class="right-show-title">Chess</p>
+        <p class="right-show-desc">Chess! A game that has been played for centuries now arrives to your terminal! WIth the power of C++ and 3.5 braincells comes this facinating take on the popular game. You can compile it or look at the <a href="https://github.com/NotARoomba/Chess/releases" target="_blank">releases</a> to run.</p>
+      </div>
     </div>
   </div>)
 }
