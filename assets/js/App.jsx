@@ -70,7 +70,13 @@ function AboutMe() {
       </div>
       <div class="text-box-outer">
         <div class="text-box-inner">
-
+            <p>I am a high school student that likes to break things for fun. My main languages are JavaScript, C++, and Java.</p>
+        </div>
+        <div class="text-box-text">
+          Frameworks
+        </div>
+        <div class="text-box-inner">
+            <p>Check out my website for more information such as my projects, status of my websites, and API’s. There may be a secret somewhere...</p>
         </div>
       </div>
     </div>)
