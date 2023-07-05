@@ -113,8 +113,7 @@ body {
 /* PAGE HEADER STUFF */
 .page-link-button {
   margin: 5px;
-  margin-top: 0;
-  margin-bottom: 0;
+  /* margin-top: 0; */
   padding: 10px;
   flex-shrink: 0;
   min-width: 100px;
@@ -136,15 +135,15 @@ body {
   align-items:center;
 }
 .page-title-buttons {
-  display:inline-block;
-  flex: 1;
-  text-align: center;
+  display:block;
 }
 .page-buttons {
   text-align: center;
-  align-items: center;
-  display: flex;
-  flex-direction:row;
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 15px;
+  width:min-content;
+  height:max-content;
 }
 #page-title {
   color: #fff;
@@ -160,6 +159,7 @@ body {
 #page-image {
   margin:25px;
   margin-right: 10px;
+  margin-bottom: 0;
   width: 175px;
   border-radius: 15%;
 }
@@ -168,8 +168,8 @@ body {
 
 .text-box-outer {
   display:flex;
-  margin: 5%;
-  margin-top: 0;
+  margin: 25px;
+  height: max-content;
   padding: 10px;
   justify-content: space-between;
   background-color: rgb(39, 39, 39, 0.8);
@@ -178,18 +178,40 @@ body {
 
 .text-box-inner {
   padding: 10px;
+  margin: 8px;
+  padding-top: 0;
+  padding-bottom: 0;
   color: #EDEDED;
-  font-size: 15px;
+  background: #292929;
+  font-size: 150%;
   width: 100%;
+  /* height: max-content;  */
   background-color: rgb(51, 51, 51);
   border-radius: 10px 10px 10px 10px;
 }
 
 .text-box-text {
   margin: 5%;
+  margin-bottom: 0;
   color: #EDEDED;
-  font-size: 15px;
-  align-self:flex-end;
+  font-size: 130%;
+  font-weight: 600;
+  align-self:center;
+}
+.text-box-outer img {
+  width:11vh;
+}
+.dark-icons {
+  filter: invert(97%) sepia(70%) saturate(0%) hue-rotate(234deg) brightness(113%) contrast(86%);
+}
+/* .text-box-outer i {
+  font-size: calc(11.125vw);
+  12%
+} */
+#image-box {
+  flex-wrap: wrap;
+  display:grid;
+  grid-template-columns: repeat(8, auto);
 }
 
 
