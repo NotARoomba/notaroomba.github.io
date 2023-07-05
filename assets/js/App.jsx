@@ -54,6 +54,9 @@ function Home() {
 }
 function AboutMe() {
   useEffect(() => {
+    $('body').css('display', 'none');
+
+    $('body').fadeIn(1000);
     boxes();
  });
   return (

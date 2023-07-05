@@ -199,7 +199,8 @@ body {
   align-self:center;
 }
 .text-box-outer img {
-  width:11vh;
+  width:12%;
+  max-width: 150px;
 }
 .dark-icons {
   filter: invert(97%) sepia(70%) saturate(0%) hue-rotate(234deg) brightness(113%) contrast(86%);
@@ -210,8 +211,7 @@ body {
 } */
 #image-box {
   flex-wrap: wrap;
-  display:grid;
-  grid-template-columns: repeat(8, auto);
+  display:flex;
 }
 
 
