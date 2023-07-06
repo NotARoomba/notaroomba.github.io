@@ -15,7 +15,7 @@ export default function Extra() {
         <Link class="link-button" onClick={() => window.location.href = "https://koombia.notaroomba.xyz"} >Koombia</Link>
         <Link class="link-button" onClick={() => window.location.href = "https://grindhub.notaroomba.xyz"}>Grindhub</Link>
         <Link class="link-button" to="/" >Home</Link>
-        <Link class="link-button" onClick={() => window.location.href = "https://focusly.notaroomba.xyz"}>Focusly</Link>
+        <Link class="link-button" onClick={() => window.location.href = "https://devoided.notaroomba.xyz"}>Devoided</Link>
         <Link class="link-button" onClick={() => window.location.href = "https://status.notaroomba.xyz"}>Status</Link>
       </div>
       <div id="secret-text">

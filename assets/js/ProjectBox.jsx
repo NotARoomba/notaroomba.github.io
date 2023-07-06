@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Tilt from 'react-parallax-tilt';
 
 const boxVariant = {
   visible: { opacity: 1, transition: { duration: 1 } },
@@ -18,7 +19,7 @@ export default function ProjectBox({imgPath, title, text}) {
       control.start("hidden");
     }
   }, [control, inView]);
-    return (<motion.div
+    return (<Tilt><motion.div
         ref={ref}
         variants={boxVariant}
         initial="hidden"
@@ -29,5 +30,5 @@ export default function ProjectBox({imgPath, title, text}) {
       <div class="project-box-title">{title}</div>
       <div class="project-box-text">{text}</div>
     </div>
-</motion.div>)
+</motion.div></Tilt>)
 }
