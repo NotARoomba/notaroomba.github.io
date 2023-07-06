@@ -1,3 +1,9 @@
+html {
+  scroll-snap-type: y mandatory;
+  height: 100%;
+  width: 100%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Inter";
@@ -38,7 +44,7 @@ body {
   text-align: center;
 }
 .home-button-section {
-  padding-top: 40px;
+  padding-top: 20px;
   text-align: center;
   align-items: center;
   display: flex;
@@ -46,7 +52,7 @@ body {
   justify-content: center;
 }
 .link-button {
-  margin: 5%;
+  margin: 3%;
   margin-bottom: 10%;
   padding: 10px;
   min-width: 100px;
@@ -133,6 +139,7 @@ body {
 .page-top-section {
   display: flex;
   align-items:center;
+  scroll-snap-align: start;
 }
 .page-title-buttons {
   display:block;
@@ -172,7 +179,7 @@ body {
   height: max-content;
   padding: 10px;
   justify-content: space-between;
-  background-color: rgb(39, 39, 39, 0.8);
+  background-color: rgb(39, 39, 39, 0.6);
   border-radius: 10px 10px 10px 10px;
 }
 
@@ -186,7 +193,7 @@ body {
   font-size: 150%;
   width: 100%;
   /* height: max-content;  */
-  background-color: rgb(51, 51, 51);
+  background-color: rgba(51, 51, 51, 0.5);
   border-radius: 10px 10px 10px 10px;
 }
 
@@ -214,5 +221,90 @@ body {
   display:flex;
 }
 
+/* PROJECT BOX STUFF */
+.project-box-outer {
+  display:flex;
+  margin: 25px;
+  margin-top: 100%;
+  height: max-content;
+  padding: 10px;
+  width: fit-content;
+  align-items:center;
+  scroll-snap-align: center;
+  justify-content: left;
+  position:relative;
+  background-color: rgb(39, 39, 39, 0.6);
+  border-radius: 10px 10px 10px 10px;
+}
+.project-box-outer:last-of-type {
+  margin-bottom: 100%;
+}
+.project-box-outer img {
+  margin:5px;
+  width: 180px;
+  border-radius: 15%;
+}
 
+.project-box-tt {
+  align-items: center;
+  max-height: max-content;
+  padding: 35px;
+  padding-left: 1%;
+  margin:5px;
+  background-color: rgba(23, 23, 23, 0.5);
+  border-radius: 10px 10px 10px 10px;
+}
+.project-box-title {
+  color: #ededed;
+  font-size: 250%;
+  margin-bottom:0%;
+  padding: 5px;
+  font-weight: 700;
+}
+.project-box-text {
+  color: #ededed;
+  font-size: 20px;
+  margin-bottom:0%;
+  padding: 5px;
+  font-weight: 600;
+}
+#projects-top-section {
+  margin-bottom: 70vh;
+}
+h1 {
+  color:#fff;
+  text-align: center;
+  margin: 0;
+  animation: scroll;
+  animation-iteration-count: infinite; 
+  animation-duration: 3s;
+  animation-timing-function:ease-in-out;
+  animation-direction: alternate-reverse;
+}
 
+@keyframes scroll {
+
+  0%{
+      transform: translateY(0);
+      border-radius: 0;
+  }
+
+  /* 50%{
+      transform: translateY(-10px);
+  } */
+  100%{
+    transform: translateY(-100px);
+}
+
+}
+
+a {
+  color: #ededed;
+}
+#secret-text {
+  display: none;
+  margin:auto;
+  color: #EDEDED;
+  text-align: center;
+  max-width: 40%;
+}
