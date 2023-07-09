@@ -11,7 +11,7 @@ import Error from './js/Error';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "",
     element: <Home/>,
     errorElement: <Error />,
   },
