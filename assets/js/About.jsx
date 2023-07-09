@@ -7,38 +7,38 @@ import Circles from "./Circles";
 export default function About() {
   return (
     <Transitions>
-      <div class="page-top-section">
+      <div className="page-top-section">
         <img src='/assets/img/avatar.png' id="page-image"></img>
-        <div class="page-title-buttons">
+        <div className="page-title-buttons">
           <p id="page-title">NotARoomba</p>
-          <div class="page-buttons">
-          <Link class="page-link-button" to="/" >Home</Link>
-          <Link class="page-link-button" to="/projects">Projects</Link>
-          <Link class="page-link-button" to="/extra">Extra</Link>
+          <div className="page-buttons">
+          <Link className="page-link-button" to="/" >Home</Link>
+          <Link className="page-link-button" to="/projects">Projects</Link>
+          <Link className="page-link-button" to="/extra">Extra</Link>
           </div>
         </div>
       </div>
-      <div class="text-box-outer">
-        <div class="text-box-inner">
+      <div className="text-box-outer">
+        <div className="text-box-inner">
             <p>I am a high school student that likes to break things for fun. My main languages are JavaScript, C++, and Java.</p>
         </div>
-        <div class="text-box-text">
+        <div className="text-box-text">
           Frameworks
         </div>
-        <div class="text-box-inner">
+        <div className="text-box-inner">
             <p>Check out my website for more information such as my projects, status of my websites, and API’s. There may be a secret somewhere...</p>
         </div>
       </div>
-      <div id="image-box" class="text-box-outer">
+      <div id="image-box" className="text-box-outer">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
         <img src="/assets/img/archlinux.svg"/>
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firefox/firefox-original.svg" /> 
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-        <img class="dark-icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+        <img className="dark-icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
-        <img class="dark-icons"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" />
+        <img className="dark-icons"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opengl/opengl-original.svg" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sdl/sdl-original.svg" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />

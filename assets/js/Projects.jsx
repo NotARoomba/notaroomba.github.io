@@ -13,22 +13,22 @@ export default function Projects() {
     };   }, []);
   return (
     <Transitions id="projects">
-      <div id="projects-top-section" class="page-top-section">
+      <div id="projects-top-section" className="page-top-section">
         <img src='/assets/img/avatar.png' id="page-image"></img>
-        <div class="page-title-buttons">
+        <div className="page-title-buttons">
           <p id="page-title">Projects</p>
-          <div class="page-buttons">
-          <Link class="page-link-button" to="/" >Home</Link>
-          <Link class="page-link-button" to="/about">About Me</Link>
-          <Link class="page-link-button" to="/extra">Extra</Link>
+          <div className="page-buttons">
+          <Link className="page-link-button" to="/" >Home</Link>
+          <Link className="page-link-button" to="/about">About Me</Link>
+          <Link className="page-link-button" to="/extra">Extra</Link>
           </div>
         </div>
       </div>
         <h1>Scroll</h1>
         <ProjectBox imgPath="/assets/img/tubb.png" title="Tubb" text={<>Tubb is a utility bot with a multitude of useful commands as well as a music system for your enjoyment. Commands are straight forward unlike the complications you have to deal with in other bots. Tubb is still being constantly worked on, so please send any bugs to the GitHub repository {<Hyperlink text="here" link="https://github.com/NotARoomba/TubbBot"/>}. Feature suggestions are welcome. You can also invite Tubb {<Hyperlink text={"here"} link={"https://top.gg/bot/750123677739122819"}/>}.</>}/>
-        <ProjectBox imgPath="/assets/img/cmd.png" title="Simple Music Player" text={<>Just a music player mini-project to get more familliar with C#. Its features are: play a file, play files from a directory (recursive), and play files from a directory shuffled. Complile it or look at the {<Hyperlink text={"releases"} link={"https://github.com/NotARoomba/Simple-Music-Player/releases"}/>} to run.</>}/>
+        <ProjectBox classN="dark-icons" imgPath="/assets/img/cmd.png" title="Simple Music Player" text={<>Just a music player mini-project to get more familliar with C#. Its features are: play a file, play files from a directory (recursive), and play files from a directory shuffled. Complile it or look at the {<Hyperlink text={"releases"} link={"https://github.com/NotARoomba/Simple-Music-Player/releases"}/>} to run.</>}/>
         <ProjectBox imgPath="/assets/img/music.png" title="Simple Music Player 2" text={<>Its back, the application no-one asked for... Simple Music Player 2! Filled with nothing but learning attempts even I'm surprised it could build. Check out the {<Hyperlink text={"releases"} link={"https://github.com/NotARoomba/Simple-Music-Player-2/releases"}/>} for this unit of an attempt.</>}/>
-        <ProjectBox imgPath="/assets/img/bounce.png" title="Bounce" text={<>A 2 player pong game made with C++ and SDL2. Player 1 conrols are Up and Left arrow Player 2 Controls are Right and Down arrow. Complile it or look at the {<Hyperlink text={"releases"} link={"https://github.com/NotARoomba/Bounce/releases"}/>} to run.</>}/>
+        <ProjectBox classN="dark-icons" imgPath="/assets/img/bounce.png" title="Bounce" text={<>A 2 player pong game made with C++ and SDL2. Player 1 conrols are Up and Left arrow Player 2 Controls are Right and Down arrow. Complile it or look at the {<Hyperlink text={"releases"} link={"https://github.com/NotARoomba/Bounce/releases"}/>} to run.</>}/>
         <ProjectBox imgPath="/assets/img/asteroids.png" title="Asteroids" text={<>Another asteroids clone out of millions by aspiring developers to join their favorite game company by learning SDL, OpenGL, or any myriad of graphics libraries. Check out the {<Hyperlink text={"releases"} link={"https://github.com/NotARoomba/Asteroids/releases"}/>} to dodge asteroids with (somewhat) broken colision.</>}/>
         <ProjectBox imgPath="/assets/img/wordle.png" title="Wordle CLI" text={<>A special product of desperation, boredom, and the desire to fit in comes this Cli version of the (decently) popular Wordle game. Complile it or look at the {<Hyperlink text={"releases"} link={"https://github.com/NotARoomba/WordleCli/releases"}/>} to run.</>}/>
         <ProjectBox imgPath="/assets/img/koombia.png" title="Koombia" text={<>Koombia lets you turn text from your science, spanish, history or ethics lessons into songs for you to memorize the contents of your quiz faster and easier. Using Koombia is as easy as copy, pasting, and clicking. Paste your lesson into the text area and select a genre for your song. It will generate a random beat with chord progressions based on the genre and a text to speech will sing the song. Next to it, theres a karaoke where you can test your singing skills and see if you learned correctly the song. You can try it out on my {<Hyperlink text={"website"} link={"https://koombia.notaroomba.xyz"}/>} and look at the {<Hyperlink text={"GitHub"} link={"https://github.com/NotARoomba/Koombia"}/>}.</>}/>

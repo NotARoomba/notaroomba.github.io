@@ -19,7 +19,7 @@ export default function Circles() {
     } catch {}
 }
 return (
-    <ul class="circles">
+    <ul className="circles">
     <li onClick={secret}></li>
     <li></li>
     <li></li>

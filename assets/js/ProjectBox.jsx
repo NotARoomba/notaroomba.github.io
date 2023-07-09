@@ -8,7 +8,7 @@ const boxVariant = {
   hidden: { opacity: 0 }
 };
 
-export default function ProjectBox({imgPath, title, text}) {
+export default function ProjectBox({imgPath, title, text, classN}) {
     const control = useAnimation();
   const [ref, inView] = useInView();
 
@@ -24,11 +24,11 @@ export default function ProjectBox({imgPath, title, text}) {
         variants={boxVariant}
         initial="hidden"
         animate={control}
-      class="project-box-outer">
-    <img src={imgPath}/>
-    <div class="project-box-tt">
-      <div class="project-box-title">{title}</div>
-      <div class="project-box-text">{text}</div>
+      className="project-box-outer">
+    <img className={classN?classN:null} src={imgPath}/>
+    <div className="project-box-tt">
+      <div className="project-box-title">{title}</div>
+      <div className="project-box-text">{text}</div>
     </div>
 </motion.div></Tilt>)
 }
