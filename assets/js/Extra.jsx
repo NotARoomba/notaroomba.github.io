@@ -12,10 +12,11 @@ export default function Extra() {
         <p id="home-title">Extra</p>
       </div>
       <div className="home-button-section">
+        <Link className="link-button" to="/" >Home</Link>
         <Link className="link-button" onClick={() => window.location.href = "https://koombia.notaroomba.xyz"} >Koombia</Link>
         <Link className="link-button" onClick={() => window.location.href = "https://grindhub.notaroomba.xyz"}>Grindhub</Link>
-        <Link className="link-button" to="/" >Home</Link>
         <Link className="link-button" onClick={() => window.location.href = "https://devoided.notaroomba.xyz"}>Devoided</Link>
+        <Link className="link-button" onClick={() => window.location.href = "https://gravity.notaroomba.xyz"}>Gravity</Link>
         <Link className="link-button" onClick={() => window.location.href = "https://status.notaroomba.xyz"}>Status</Link>
       </div>
       <div id="secret-text">

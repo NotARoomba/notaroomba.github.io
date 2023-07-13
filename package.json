@@ -4,7 +4,7 @@
   "homepage": "https://notaroomba.xyz",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cp ./404.html ./docs",
     "serve": "vite preview"
   },
   "dependencies": {
