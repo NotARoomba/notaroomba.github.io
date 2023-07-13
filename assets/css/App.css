@@ -180,7 +180,8 @@ body {
   margin:25px;
   margin-right: 10px;
   margin-bottom: 0;
-  width: 175px;
+  width: 20vh;
+  min-width: 120px;
   border-radius: 15%;
 }
 @media screen and (max-width: 632px){
@@ -386,12 +387,12 @@ h1 {
 @media screen and (max-width: 632px){
   #projects-top-section > img {
     margin:50%;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 0;
     justify-content: center;
   }
   #projects-top-section {
-    margin-bottom: 45%;
+    margin-bottom: 40%;
   }
   h1 {
     margin-bottom: 50vh;
