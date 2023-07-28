@@ -426,3 +426,6 @@ a {
   text-align: center;
   max-width: 40%;
 }
+.red-roomba {
+  filter: invert(16%) sepia(66%) saturate(6366%) hue-rotate(337deg) brightness(82%) contrast(111%);
+}
