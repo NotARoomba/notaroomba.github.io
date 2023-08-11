@@ -18,6 +18,7 @@ export default function Extra() {
         <Link className="link-button" to="https://devoided.notaroomba.xyz">Devoided</Link>
         <Link className="link-button" to="https://gravity.notaroomba.xyz">Gravity</Link>
         <Link className="link-button" to="https://wordle.notaroomba.xyz">Wordle</Link>
+        <Link className="link-button" to="https://asteroids.notaroomba.xyz">Asteroids</Link>
         <Link className="link-button" to="https://status.notaroomba.xyz">Status</Link>
       </div>
       <div id="secret-text">
