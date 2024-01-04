@@ -1,7 +1,7 @@
 {
   "name": "notaroomba.github.io",
   "version": "3.0.0",
-  "homepage": "https://notaroomba.xyz",
+  "homepage": "https://notaroomba.dev",
   "scripts": {
     "dev": "vite",
     "build": "vite build && cp ./404.html ./docs",
