@@ -1,0 +1,23 @@
+{
+  "name": "notaroomba.github.io",
+  "version": "3.0.0",
+  "homepage": "https://notaroomba.dev",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && cp ./404.html ./docs",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@types/react": "^17.0.13",
+    "@types/react-dom": "^17.0.8",
+    "@vitejs/plugin-react": "^4.0.2",
+    "framer-motion": "^10.12.18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.5.2",
+    "react-parallax-tilt": "^1.7.151",
+    "react-router-dom": "^6.2.2",
+    "react-scroll-parallax": "^3.4.2",
+    "vite": "^4.4.2"
+  }
+}

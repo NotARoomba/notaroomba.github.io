@@ -1,23 +1,38 @@
 {
   "name": "notaroomba.github.io",
-  "version": "3.0.0",
-  "homepage": "https://notaroomba.dev",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp ./404.html ./docs",
-    "serve": "vite preview"
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@types/react": "^17.0.13",
-    "@types/react-dom": "^17.0.8",
-    "@vitejs/plugin-react": "^4.0.2",
-    "framer-motion": "^10.12.18",
+    "@react-three/drei": "^9.96.1",
+    "@react-three/fiber": "^8.15.14",
+    "@tsparticles/engine": "^3.1.0",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.1.0",
+    "@types/three": "^0.160.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-intersection-observer": "^9.5.2",
-    "react-parallax-tilt": "^1.7.151",
-    "react-router-dom": "^6.2.2",
-    "react-scroll-parallax": "^3.4.2",
-    "vite": "^4.4.2"
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
   }
 }
