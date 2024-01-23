@@ -3,13 +3,13 @@ import { Link } from "react-scroll";
 
 export default function RotatingButton({
   title,
-  to,
+  to = "",
   func,
 }: RotatingButtonProps) {
   const handleSetActive = (to: string) => {
     console.log(to);
   };
-  return (to ? (
+  return (to !== "" ? (
     <Link className="rotate-button text-2xl font-bold w-44" to={to} spy={true}
     smooth={true}
     isDynamic
