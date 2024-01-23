@@ -24,99 +24,106 @@ export default function BackgroundEffect() {
     });
   }, []);
   const options: ISourceOptions = useMemo(
-    () => ({particles: {
-      number: {
+    () => ({
+      particles: {
+        number: {
           value: 100,
           density: {
-              enable: true,
+            enable: true,
           },
-      },
-      color: {
+        },
+        color: {
           value: "#ffffff",
           animation: {
-              enable: true,
-              speed: 20,
-              sync: true,
+            enable: true,
+            speed: 20,
+            sync: true,
           },
-      },
-      shape: {
+        },
+        shape: {
           type: "circle",
-      },
-      opacity: {
+        },
+        opacity: {
           value: 0.5,
-      },
-      size: {
+        },
+        size: {
           value: {
-              min: 1,
-              max: 3,
+            min: 1,
+            max: 3,
           },
-      },
-      links: {
+        },
+        links: {
           enable: true,
           distance: 150,
           opacity: 0.4,
           width: 1,
           triangles: {
-              enable: false,
-              color: "#ffffff",
-              opacity: 0.1,
+            enable: false,
+            color: "#ffffff",
+            opacity: 0.1,
           },
-      },
-      move: {
+        },
+        move: {
           enable: true,
           speed: 2,
+        },
       },
-  },
-  interactivity: {
-      detectsOn: "window",
-      events: {
+      interactivity: {
+        detectsOn: "window",
+        events: {
           onHover: {
-              enable: true,
-              mode: "repulse",
+            enable: true,
+            mode: "repulse",
           },
           onClick: {
-              enable: true,
-              mode: "push",
+            enable: true,
+            mode: "push",
           },
-      },
-      modes: {
+        },
+        modes: {
           grab: {
-              distance: 400,
-              links: {
-                  opacity: 1,
-              },
+            distance: 400,
+            links: {
+              opacity: 1,
+            },
           },
           bubble: {
-              distance: 400,
-              size: 40,
-              duration: 2,
-              opacity: 0.8,
+            distance: 400,
+            size: 40,
+            duration: 2,
+            opacity: 0.8,
           },
           repulse: {
-              distance: 150,
+            distance: 150,
           },
           push: {
-              quantity: 4,
+            quantity: 4,
           },
           remove: {
-              quantity: 2,
+            quantity: 2,
           },
+        },
       },
-  },
-  background: {
-      color: "transparent",
-  },detectRetina: true, zLayers: 100}),
+      background: {
+        color: "transparent",
+      },
+      detectRetina: true,
+      zLayers: 100,
+    }),
     [],
   );
   const particlesLoaded = async (container?: Container) => {
+    //TODO ADD LOADING SCREEN
     console.log(container);
   };
 
-  return (
-    init ? <Particles
+  return init ? (
+    <Particles
       id="tsparticles"
       particlesLoaded={particlesLoaded}
       options={options}
-    /> : <></>
+    />
+  ) : (
+    <></>
   );
 }
