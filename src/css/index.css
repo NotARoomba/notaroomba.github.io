@@ -2,13 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-snap-type: y mandatory;
+}
 html,
 body,
 #root {
   margin: 0;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
+  scroll-behavior: smooth;
+  font-family: Inter;
 }
 
 .rotate-button {
@@ -20,14 +22,13 @@ body,
   cursor: pointer;
   perspective: 1000px;
 }
-.rotate-button > p{
+.rotate-button > p {
   transform-style: preserve-3d;
   transform: translateZ(-25px);
-  transition: transform .25s;
-  
+  transition: transform 0.25s;
 }
 .rotate-button > p:before,
-.rotate-button > p:after{
+.rotate-button > p:after {
   position: absolute;
   content: attr(id);
   height: 55px;
@@ -39,15 +40,15 @@ body,
   box-sizing: border-box;
   border-radius: 5px;
 }
-.rotate-button > p:before{
+.rotate-button > p:before {
   color: #fff;
   background: #000;
   transform: rotateY(0deg) translateZ(25px);
 }
-.rotate-button > p:after{
+.rotate-button > p:after {
   color: white;
   transform: rotateX(90deg) translateZ(25px);
 }
-.rotate-button > p:hover{
+.rotate-button > p:hover {
   transform: translateZ(-25px) rotateX(-90deg);
 }
