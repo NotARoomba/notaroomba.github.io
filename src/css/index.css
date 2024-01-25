@@ -13,40 +13,19 @@ body,
   font-family: Inter;
 }
 
-.rotate-button {
-  position: relative;
-  display: inline-flex;
-  width: 180px;
-  height: 55px;
-  margin: auto;
-  cursor: pointer;
-  perspective: 1000px;
-}
 .rotate-button > p {
   transform-style: preserve-3d;
   transform: translateZ(-25px);
-  transition: transform 0.25s;
 }
 .rotate-button > p:before,
 .rotate-button > p:after {
-  position: absolute;
-  content: attr(id);
-  height: 55px;
-  width: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 5px solid white;
-  box-sizing: border-box;
-  border-radius: 5px;
+  @apply absolute content-[attr(id)] w-28 xs:w-32 lg:w-44 h-14 flex items-center justify-center box-border rounded border-4 border-solid border-white;
 }
 .rotate-button > p:before {
-  color: #fff;
   background: #000;
   transform: rotateY(0deg) translateZ(25px);
 }
 .rotate-button > p:after {
-  color: white;
   transform: rotateX(90deg) translateZ(25px);
 }
 .rotate-button > p:hover {

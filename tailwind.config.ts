@@ -1,10 +1,16 @@
 import type { Config } from "tailwindcss";
+import defaultTheme from "tailwindcss/defaultTheme";
 
 export default {
   content: ["./index.html", "./src/tsx/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
       sans: "Inter",
+    },
+    screens: {
+      "2xs": "475px",
+      xs: "600px",
+      ...defaultTheme.screens,
     },
     extend: {
       keyframes: {

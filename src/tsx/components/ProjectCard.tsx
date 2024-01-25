@@ -9,12 +9,12 @@ export default function ProjectCard({
   website,
 }: ProjectCardProps) {
   return (
-    <div className="flex w-3/4 h-3/4 m-auto rounded-xl p-5 bg-neutral-900/50">
-      <img src={image} className="rounded-xl w-72 mx-auto my-2" />
-      <div className=" mx-20 my-auto">
-        <p className="text-6xl font-bold my-4">{title}</p>
-        <p className="text-xl">{desc}</p>
-        <div className="flex justify-between mt-4 mx-auto">
+    <div className="flex z-40 flex-col lg:flex-row w-11/12 xl:w-3/4 xl:min-h-3/4 h-fit m-auto rounded-xl p-5 bg-neutral-900/70">
+      <img src={image} className="rounded-xl w-1/4 lg:w-72 lg:min-w-72 h-1/4 m-auto" />
+      <div className=" lg:mx-20 my-auto text-center lg:text-left">
+        <p className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold my-4">{title}</p>
+        <p className="text-md lg:text-xl w-full text-wrap">{desc}</p>
+        <div className="mb-5 flex justify-start gap-8 mt-4 mx-auto lg:mr-auto lg:ml-0  w-fit">
           <RotatingButton title="Code" to={code} />
           {website && <RotatingButton title="Website" to={website} />}
         </div>

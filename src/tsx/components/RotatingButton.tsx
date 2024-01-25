@@ -10,10 +10,12 @@ export default function RotatingButton({
   const handleSetActive = (to: string) => {
     console.log(to);
   };
+  const className = "relative inline-flex w-28 xs:w-32 lg:w-44 h-14 cursor-pointer m-auto text-lg lg:text-2xl font-bold perspective-1000 rotate-button";
+  const className2 = "transition-transform duration-300 before:text-white after:text-white "
   return to != "" ? (
     !to.includes("http") ? (
       <PageLink
-        className="rotate-button text-2xl font-bold w-44"
+        className={className}
         delay={0}
         to={to}
         spy={true}
@@ -22,16 +24,16 @@ export default function RotatingButton({
         onSetActive={handleSetActive}
         duration={500}
       >
-        <p id={title}></p>
+        <p className={className2} id={title}></p>
       </PageLink>
     ) : (
-      <Link to={to} className="rotate-button text-2xl font-bold w-44">
-        <p id={title}></p>
+      <Link to={to} className={className}>
+        <p className={className2} id={title}></p>
       </Link>
     )
   ) : (
-    <div className="rotate-button text-2xl font-bold" onClick={func}>
-      <p id={title}></p>
+    <div className={className} onClick={func}>
+      <p className={className2} id={title}></p>
     </div>
   );
 }

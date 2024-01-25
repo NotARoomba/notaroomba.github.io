@@ -25,6 +25,7 @@ export default function BackgroundEffect() {
   }, []);
   const options: ISourceOptions = useMemo(
     () => ({
+      fpsLimit: 60,
       particles: {
         number: {
           value: 100,
@@ -50,7 +51,7 @@ export default function BackgroundEffect() {
           value: {
             min: 1,
             max: 3,
-          },
+          }
         },
         links: {
           enable: true,
@@ -79,6 +80,10 @@ export default function BackgroundEffect() {
             enable: true,
             mode: "push",
           },
+          onDiv: {
+            enable: true,
+            mode: "remove"
+          }
         },
         modes: {
           grab: {
@@ -97,7 +102,7 @@ export default function BackgroundEffect() {
             distance: 150,
           },
           push: {
-            quantity: 4,
+            quantity: 2,
           },
           remove: {
             quantity: 2,
