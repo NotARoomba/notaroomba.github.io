@@ -1,5 +1,5 @@
 import { RotatingButtonProps } from "../utils/Types";
-import { Link as PageLink } from "react-scroll";
+import { Link as PageLink, scroller } from "react-scroll";
 import { Link } from "react-router-dom";
 
 export default function RotatingButton({
@@ -7,22 +7,28 @@ export default function RotatingButton({
   to = "",
   func,
 }: RotatingButtonProps) {
-  const handleSetActive = (to: string) => {
-    console.log(to);
-  };
-  const className = "relative inline-flex w-28 xs:w-32 lg:w-44 h-14 cursor-pointer m-auto text-lg lg:text-2xl font-bold perspective-1000 rotate-button";
-  const className2 = "transition-transform duration-300 before:text-white after:text-white "
+  const className =
+    "relative inline-flex w-28 xs:w-32 lg:w-44 h-14 cursor-pointer m-auto text-lg lg:text-2xl font-bold perspective-1000 rotate-button";
+  const className2 =
+    "transition-transform duration-300 before:text-white after:text-white transform-style-3d  -translate-z-[25px]";
   return to != "" ? (
     !to.includes("http") ? (
       <PageLink
         className={className}
         delay={0}
         to={to}
-        spy={true}
-        smooth={true}
+        spy
+        smooth
         isDynamic
-        onSetActive={handleSetActive}
         duration={500}
+        onClick={() =>
+          scroller.scrollTo(to, {
+            delay: 0,
+            spy: true,
+            smooth: true,
+            duration: 500,
+          })
+        }
       >
         <p className={className2} id={title}></p>
       </PageLink>
@@ -32,8 +38,16 @@ export default function RotatingButton({
       </Link>
     )
   ) : (
-    <div className={className} onClick={func}>
-      <p className={className2} id={title}></p>
-    </div>
+    func && (
+      <div
+        className={className}
+        onClick={(e) => {
+          e.stopPropagation();
+          func();
+        }}
+      >
+        <p className={className2} id={title}></p>
+      </div>
+    )
   );
 }

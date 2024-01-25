@@ -12,11 +12,6 @@ body,
   scroll-behavior: smooth;
   font-family: Inter;
 }
-
-.rotate-button > p {
-  transform-style: preserve-3d;
-  transform: translateZ(-25px);
-}
 .rotate-button > p:before,
 .rotate-button > p:after {
   @apply absolute content-[attr(id)] w-28 xs:w-32 lg:w-44 h-14 flex items-center justify-center box-border rounded border-4 border-solid border-white;

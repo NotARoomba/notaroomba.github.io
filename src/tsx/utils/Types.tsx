@@ -8,6 +8,7 @@ export interface RotatingButtonProps {
 
 export interface CardCarouselProps {
   children: ReactNode[];
+  index: number[];
 }
 export interface ProjectCardProps {
   title: string;
