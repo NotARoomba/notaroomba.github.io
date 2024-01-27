@@ -248,9 +248,9 @@ export default function Home() {
                 }}
                 className="text-lg md:text-xl lg:w-2/4 mx-auto lg:mr-0 text-center lg:text-right w-screen px-4"
               >
-                I'm a high school student that likes to explore code for fun. My
-                main programming languages are JavaScript, Typescript, C++, and
-                Java.
+                I'm a high school student who likes to write code, read, play
+                music, and learn about new topics for fun. My proficient
+                programming languages are JavaScript, Typescript, C++, and Java.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0 }}
