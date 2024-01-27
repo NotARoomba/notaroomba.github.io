@@ -6,7 +6,8 @@ import { OrbitControls } from "@react-three/drei";
 import { NoToneMapping } from "three";
 import CardCarousel from "../components/CardCarousel";
 import ProjectCard from "../components/ProjectCard";
-import { useState } from "react";
+import { Suspense, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function Home() {
   const [index, setIndex] = useState([0, 0]);
@@ -165,142 +166,209 @@ export default function Home() {
     />,
   ];
   return (
-    <div
-      className="bg-black text-white w-full flex flex-col snap-always snap-mandatory"
-      id="home"
-    >
-      <div id="start" className="h-screen w-full flex snap-center">
-        <div className="m-auto justify-center  flex flex-col">
-          {/* <div className="w-screen h-96 z-10 mx-auto justify-center">
-
-          
-          <Canvas
-            className="w-screen h-96 justify-items-start z-10"
-            camera={{ position: [-10, 4, 8] }}
-            gl={{ antialias: true, toneMapping: NoToneMapping }}
-            flat
-          >
-            <Roomba />
-            <pointLight
-              intensity={100}
-              color={"#ef4444"}
-              position={[-6, 5, -5]}
-            />
-            <pointLight
-              intensity={100}
-              color={"#f97316"}
-              position={[6, 5, 5]}
-            />
-            <pointLight
-              intensity={100}
-              color={"#3b82f6"}
-              position={[-6, 5, 5]}
-            />
-            <pointLight
-              intensity={100}
-              color={"#8b5cf6"}
-              position={[6, 5, -5]}
-            />
-            <OrbitControls
-              enablePan={false}
-              enableZoom={false}
-              enableRotate={true}
-            />
-          </Canvas></div> */}
-          <p className="text-5xl xs:text-6xl sm:text-7xl md:text-8xl text-center font-bold mb-2">
-            NotARoomba
-          </p>
-          <RotatingButton title={"Start"} to="about" />
-        </div>
-      </div>
-      <div className="h-screen w-screen flex flex-col snap-center">
-        <div
-          id="about"
-          className="m-auto w-full justify-center flex flex-col-reverse lg:flex-row "
+    <AnimatePresence>
+      <div className="bg-black text-white w-full flex flex-col">
+        <div id="home" className="h-screen w-full flex snap-center">
+          <div className="m-auto justify-center  flex flex-col">
+            {/* <div className="w-screen h-96 z-0 mx-auto justify-center">
+        <Canvas
+          className="w-screen h-96 justify-items-start z-10"
+          camera={{ position: [-10, 4, 8] }}
+          gl={{ antialias: true, toneMapping: NoToneMapping }}
+          flat
         >
-          <div className="flex flex-col justify-center text-center lg:w-1/2 gap-y-4 mx-auto">
-            <p className="text-4xl 2xs:text-5xl xs:text-6xl sm:text-7xl md:text-8xl font-bold text-center lg:text-right -mt-2 sm:mt-0">
-              About Me
-            </p>
-            <p className="text-lg md:text-xl lg:w-2/4 mx-auto lg:mr-0 text-center lg:text-right w-screen px-4">
-              I'm a high school student that likes to explore code for fun. My
-              main programming languages are JavaScript, Typescript, C++, and
-              Java.
-            </p>
-            <div className="mx-auto lg:ml-auto lg:mr-0 z-20">
-              <RotatingButton title="Continue" to="projects" />
-            </div>
-          </div>
-          <div className="flex flex-col justify-center text-center w-full lg:w-1/2 h-72 lg:h-screen mx-auto">
-            <Canvas
-              className="w-screen justify-items-start z-10"
-              camera={{ position: [-10, 4, 8] }}
-              gl={{ antialias: true, toneMapping: NoToneMapping }}
-              flat
+          <Roomba />
+          <pointLight
+            intensity={100}
+            color={"#ef4444"}
+            position={[-6, 5, -5]}
+          />
+          <pointLight
+            intensity={100}
+            color={"#f97316"}
+            position={[6, 5, 5]}
+          />
+          <pointLight
+            intensity={100}
+            color={"#3b82f6"}
+            position={[-6, 5, 5]}
+          />
+          <pointLight
+            intensity={100}
+            color={"#8b5cf6"}
+            position={[6, 5, -5]}
+          />
+          <OrbitControls
+            enablePan={false}
+            enableZoom={false}
+            enableRotate={true}
+          />
+        </Canvas></div> */}
+            <img
+              src="/img/profile.png"
+              className="w-44 lg:w-72 mx-auto z-20 my-2"
+            />
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { duration: 0.75 } }}
+              className="text-5xl xs:text-6xl sm:text-7xl md:text-8xl text-center font-bold mb-2"
             >
-              {/* <ambientLight intensity={1} /> */}
-              <pointLight
-                intensity={100}
-                color={"#ef4444"}
-                position={[-6, 5, -5]}
-              />
-              <pointLight
-                intensity={100}
-                color={"#f97316"}
-                position={[6, 5, 5]}
-              />
-              <pointLight
-                intensity={100}
-                color={"#3b82f6"}
-                position={[-6, 5, 5]}
-              />
-              <pointLight
-                intensity={100}
-                color={"#8b5cf6"}
-                position={[6, 5, -5]}
-              />
-              <Computer />
-              <OrbitControls
-                enablePan={false}
-                enableZoom={false}
-                enableRotate={true}
-              />
-            </Canvas>
+              NotARoomba
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{
+                opacity: 1,
+                transition: { duration: 0.75, delay: 0.5 },
+              }}
+              className="mx-auto"
+            >
+              <RotatingButton title={"Start"} to="about" />
+            </motion.div>
           </div>
         </div>
-      </div>
-      <div className="h-screen w-full flex snap-center">
-        <div id="projects" className="m-auto justify-center flex flex-col  ">
-          <div className="flex flex-col text-center  relative ">
-            <p className="text-5xl xs:text-6xl sm:text-7xl md:text-8xl font-bold mb-4">
-              Projects
-            </p>
-            <p className=" text-2xl lg:text-4xl mb-14">
-              {index[0] + 1} / {children.length}
-            </p>
-            <CardCarousel index={index}>
-              {children.map((v, i) => (
-                <div key={i}>{v}</div>
-              ))}
-            </CardCarousel>
-            <div className="flex gap-4 mx-auto z-20">
-              {index[0] > 0 && (
-                <RotatingButton
-                  title="<"
-                  func={() => setIndex([index[0] - 1, index[0]])}
-                />
-              )}
-              {index[0] < children.length - 1 && (
-                <RotatingButton
-                  title=">"
-                  func={() => setIndex([index[0] + 1, index[0]])}
-                />
-              )}
+        <div className="h-screen w-screen flex flex-col snap-center">
+          <div
+            id="about"
+            className="m-auto w-full justify-center flex flex-col-reverse lg:flex-row "
+          >
+            <div className="flex flex-col justify-center text-center lg:w-1/2 gap-y-4 mx-auto">
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, transition: { duration: 0.75 } }}
+                className="text-4xl 2xs:text-5xl xs:text-6xl sm:text-7xl md:text-8xl font-bold text-center lg:text-right -mt-2 sm:mt-0"
+              >
+                About Me
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: { duration: 0.75, delay: 0.5 },
+                }}
+                className="text-lg md:text-xl lg:w-2/4 mx-auto lg:mr-0 text-center lg:text-right w-screen px-4"
+              >
+                I'm a high school student that likes to explore code for fun. My
+                main programming languages are JavaScript, Typescript, C++, and
+                Java.
+              </motion.p>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: { duration: 0.75, delay: 1 },
+                }}
+                className="mx-auto lg:ml-auto lg:mr-0 z-20"
+              >
+                <RotatingButton title="Continue" to="projects" />
+              </motion.div>
+            </div>
+            <div className="flex flex-col justify-center text-center w-full lg:w-1/2 h-72 lg:h-screen mx-auto">
+              <Suspense
+                fallback={
+                  <img
+                    className="rounded-full w-96 mx-auto"
+                    src="/img/profile.png"
+                  />
+                }
+              >
+                <Canvas
+                  className="w-screen justify-items-start z-10"
+                  camera={{ position: [-10, 4, 8] }}
+                  gl={{ antialias: true, toneMapping: NoToneMapping }}
+                  flat
+                >
+                  {/* <ambientLight intensity={1} /> */}
+                  <pointLight
+                    intensity={100}
+                    color={"#ef4444"}
+                    position={[-6, 5, -5]}
+                  />
+                  <pointLight
+                    intensity={100}
+                    color={"#f97316"}
+                    position={[6, 5, 5]}
+                  />
+                  <pointLight
+                    intensity={100}
+                    color={"#3b82f6"}
+                    position={[-6, 5, 5]}
+                  />
+                  <pointLight
+                    intensity={100}
+                    color={"#8b5cf6"}
+                    position={[6, 5, -5]}
+                  />
+                  <Computer />
+                  <OrbitControls
+                    enablePan={false}
+                    enableZoom={false}
+                    enableRotate={true}
+                  />
+                </Canvas>
+              </Suspense>
             </div>
           </div>
         </div>
+        <div className="h-screen w-screen flex snap-center">
+          <div
+            id="projects"
+            className="m-auto align-middle w-full justify-center flex flex-col  "
+          >
+            <div className="flex flex-col text-center  relative ">
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, transition: { duration: 0.75 } }}
+                className="text-5xl xs:text-6xl sm:text-7xl md:text-8xl font-bold mb-4"
+              >
+                Projects
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: { duration: 0.75, delay: 0.5 },
+                }}
+                className=" text-2xl lg:text-4xl mb-14"
+              >
+                {index[0] + 1} / {children.length}
+              </motion.p>
+              <CardCarousel index={index}>
+                {children.map((v, i) => (
+                  <div key={i}>{v}</div>
+                ))}
+              </CardCarousel>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: { duration: 0.75, delay: 1.5 },
+                }}
+                className="flex gap-4 mx-auto z-20"
+              >
+                <AnimatePresence>
+                  {index[0] > 0 && (
+                    <RotatingButton
+                      title="<"
+                      func={() => setIndex([index[0] - 1, index[0]])}
+                    />
+                  )}
+                </AnimatePresence>
+                <RotatingButton title={"Home"} to="home" />
+                <AnimatePresence>
+                  {index[0] < children.length - 1 && (
+                    <RotatingButton
+                      title=">"
+                      func={() => setIndex([index[0] + 1, index[0]])}
+                    />
+                  )}
+                </AnimatePresence>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+        <BackgroundEffect />
       </div>
-      <BackgroundEffect />
-    </div>
+    </AnimatePresence>
   );
 }

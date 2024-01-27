@@ -3,8 +3,12 @@ import { AnimatePresence, motion } from "framer-motion";
 
 export default function CardCarousel({ children, index }: CardCarouselProps) {
   return (
-    <div className="w-screen h-full flex flex-col overflow-x-hidden -mt-12">
-      <div className="flex z-20 h-96 relative">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1, transition: { duration: 0.75, delay: 1 } }}
+      className="w-screen h-full flex flex-col overflow-x-hidden -mt-12"
+    >
+      <div className="flex z-20 h-[60vh] xl:h-96 relative">
         <AnimatePresence>
           <motion.div
             key={index[0]}
@@ -27,6 +31,6 @@ export default function CardCarousel({ children, index }: CardCarouselProps) {
           </motion.div>
         </AnimatePresence>
       </div>
-    </div>
+    </motion.div>
   );
 }
