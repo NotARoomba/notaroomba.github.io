@@ -246,11 +246,10 @@ export default function Home() {
                   opacity: 1,
                   transition: { duration: 0.75, delay: 0.5 },
                 }}
-                className="text-lg md:text-xl lg:w-2/4 mx-auto lg:mr-0 text-center lg:text-right w-screen px-4"
+                className="text-lg lg:w-2/4 mx-auto lg:mr-0 text-center lg:text-right w-screen px-4"
               >
-                I'm a high school student who likes to write code, read, play
-                music, and learn about new topics for fun. My proficient
-                programming languages are JavaScript, Typescript, C++, and Java.
+                I'm a high school student who likes to write code, read, and play
+                music. I am currently learning React-Native to create silly apps.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0 }}
@@ -344,7 +343,7 @@ export default function Home() {
                   opacity: 1,
                   transition: { duration: 0.75, delay: 1.5 },
                 }}
-                className="flex gap-4 mx-auto z-20"
+                className="flex gap-4 mx-auto mt-4 -mb-4 sm:my-0 z-20"
               >
                 <AnimatePresence>
                   {index[0] > 0 && (
