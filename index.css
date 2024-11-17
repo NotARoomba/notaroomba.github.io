@@ -5,6 +5,6 @@
 html,
 body,
 #root {
-  overflow: auto;
+  overflow-x: hidden;
   font-family: Inter, sans-serif;
 }
