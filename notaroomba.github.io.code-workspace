@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../NivelesDeNiveles"
+		},
+		{
+			"path": "../Gravity-Simulation"
+		}
+	],
+	"settings": {}
+}
